@@ -25,7 +25,7 @@ namespace CityManagementApp
         private readonly Type _entityType;
         private IRepository<object>? _currentRepository;
         private readonly Dictionary<string, TextBox> _fieldInputs = new();
-        private string _connectionString = "Host=localhost;Port=5432;Database=test;Username=postgres;Password=samualson0080";
+        private string _connectionString = "";
         public Dictionary<string, TextBox> FieldInputs => _fieldInputs;
 
         public AddEditWindow(Type entityType, IRepository<object> repository, object? existingEntity = null)
